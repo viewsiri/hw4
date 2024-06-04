@@ -1,11 +1,27 @@
+<div class="container text-center">
+  <div class="row g-2">
+    <div class="col-6">
+      <div class="p-3">
+
 <h1>Places</h1>
 
-<ul>
-  <% for place in @places %>
-    <li><a href="/places/<%= place["id"] %>"><%= place["name"] %></a></li>
-  <% end %>
-</ul>
+<div class="row">
+  <div class="col-md-4">
+
+    <ul>
+      <% for place in @places %>
+        <li><a href="/places/<%= place["id"] %>"><%= place["name"] %></a></li>
+      <% end %>
+    </ul>
+
+  </div>
+</div>  
 
 <p>
   <a href="/places/new">New place</a>
 </p>
+
+      </div>
+    </div>
+  </div>
+</div>
